@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingeniería de Sistemas - UNAMAD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+  <!-- Pantalla de carga -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="images/LIngSis negro copia.png" alt="Logo UNAMAD" />
+      <h2 class="loading-txt">
+        Cargando
+        <span class="dot">.</span>
+        <span class="dot">.</span>
+        <span class="dot">.</span>
+      </h2>
+      <h3>Power by: Ixiuss</h3>
+    </div>
+  </div>
+
+  <!-- Header fijo -->
+  <header>
+    <div class="logo">
+        <img src="images/LIngSis negro copia.png" />
+        <span>Ingenieria de Sistemas e Informatica</span>
+    </div>
+
+    
+    <nav id="navbar">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#docentes">Docentes</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section id="inicio" class="seccion fade-in">
+      <div class="contenido">
+        <img src="images/LIngSis negro copia.png" alt="Logo ISI unamad" class="Logo-inicio" />
+        <h2>Bienvenidos a la Escuela Profesional de Ingeniería de Sistemas</h2>
+        <p>Innovación, tecnología y desarrollo desde la Amazonía peruana 🌿</p>
+      </div>
+    </section>
+
+    <section id="nosotros" class="seccion fade-in">
+      <h2>Nosotros</h2>
+      <p>
+        La carrera profesional de Ingeniería de Sistemas e Informática 
+        es responsable por la generación de recursos humanos orientados 
+        a la creación de nueva tecnología computacional que, a su 
+        vez, permita impulsar la industria de software de nuestro medio.
+      </p>
+
+        <h2>Desarrollo Tecnológico Nacional</h2>
+        <p>Nuestros egresados deben estar preparados para cambiar la situación
+         actual de nuestro país mediante el desarrollo de tecnología 
+         propia, contribuyendo al crecimiento de la industria tecnológica nacional.
+        </p>
+      </p>
+    </section>
+
+    <section id="docentes" class="seccion fade-in">
+  <h2>Nuestros Docentes</h2>
+
+  <div class="docentes-grid">
+    <!-- Docentes visibles -->
+    <div class="tarjeta">
+      <img src="images/Iyan.jpg" alt="Docente 1" />
+      <h3>Ing. Yvan Vilchez Navarro</h3>
+      <p>Director de Escuela Profesional ISI</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="images/dra Nelly.jfif" alt="Docente 2" />
+      <h3>Dra. Nelly Jacqueline Ulloa Gallardo</h3>
+      <p>Experta en Desarrollo de Software</p>
+    </div>
+
+    <div class="tarjeta">
+      <img src="images/ralph.jfif" alt="Docente 3" />
+      <h3>Dr. Ralph Miranda Castillo</h3>
+      <p>Ingeniero Electrónico, especialidad en Telecomunicaciones</p>
+    </div>
+
+    <!-- Docentes ocultos inicialmente -->
+    <div class="tarjeta oculto">
+      <img src="images/dorian.jfif" alt="Docente 4" />
+      <h3>Dr. Dany Dorian Isuiza Pérez</h3>
+      <p>Ingeniero de Software</p>
+    </div>
+
+    <div class="tarjeta oculto">
+      <img src="images/arpita.jfif" alt="Docente 5" />
+      <h3>Ing. Frank Arpita Salcedo</h3>
+      <p>Ingeniero de Sistemas</p>
+    </div>
+
+    <div class="tarjeta oculto">
+      <img src="images/ormachea.jpg" alt="Docente 6" />
+      <h3>Ing. Mario Jesus Ormachea Mejía</h3>
+      <p>Ingeniero de Redes y Telecomunicaciones</p>
+    </div>
+
+    <div class="tarjeta oculto">
+      <img src="images/denys.jpg" alt="Docente 7" />
+      <h3>Dr.Denys Alberto Jaramillo Peralta</h3>
+      <p>Ingeniero de Sistemas</p>
+    </div>
+
+  </div>
+
+  <button id="btn-ver-mas">Mostrar más</button>
+</section>
+
+<section id="plan-estudios" class="seccion fade-in">
+  <h2>Plan de Estudios</h2>
+  <p class="subtitulo">Malla curricular — Ingeniería de Sistemas e Informática (UNAMAD)</p>
+
+  <div id="acordeon-semestres" class="acordeon"></div>
+
+  <!-- Si quieres un botón para expandir/colapsar todo -->
+  <div class="acordeon-controles">
+    <button id="expandir-todo" class="btn-mostrar">Abrir todo</button>
+    <button id="colapsar-todo" class="btn-mostrar">Cerrar todo</button>
+  </div>
+</section>
+
+
+
+    <section id="eventos" class="seccion fade-in">
+  <h2>Próximos Eventos</h2>
+  <p class="subtitulo">Participa en nuestros eventos académicos y fortalece tus competencias profesionales</p>
+
+  <div class="eventos-grid">
+    <div class="tarjeta-evento">
+      <div class="encabezado-evento">
+        <p class="tipo">Curso-Taller de Capacitación</p>
+        <h3>Industria 4.0 y Automatización de Procesos</h3>
+      </div>
+      <div class="contenido-evento">
+        <p>Capacitación en diseño, programación e implementación de sistemas de control automático mediante PLC y diseño de circuitos impresos (PCB).</p>
+        <p><strong>Fecha:</strong> 13 y 14 de Octubre 2025</p>
+        <p><strong>Lugar:</strong> Universidad Nacional Amazónica de Madre de Dios</p>
+        <div class="botones">
+          <a href="#" class="btn">Ver más información</a>
+          <a href="#" class="btn secundario">Inscribirse</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tarjeta-evento">
+      <div class="encabezado-evento">
+        <p class="tipo">Seminario Taller Nacional de Ingeniería de Sistemas 2025</p>
+        <h3>Seminario Taller Nacional</h3>
+      </div>
+      <div class="contenido-evento">
+        <p>Espacio participativo donde se desarrollan temas asociados con tecnologías que permiten el intercambio de conocimientos y experiencias.</p>
+        <p><strong>Fecha:</strong> 15 y 16 de Octubre 2025</p>
+        <p><strong>Lugar:</strong> Av. 2 de Mayo</p>
+        <div class="botones">
+          <a href="#" class="btn">Ver más información</a>
+          <a href="#" class="btn secundario">Inscribirse</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tarjeta-evento oculto">
+      <div class="encabezado-evento">
+        <p class="tipo">Foro de Innovación Tecnológica</p>
+        <h3>Foro de Innovación</h3>
+      </div>
+      <div class="contenido-evento">
+        <p>Debate sobre tendencias tecnológicas y desarrollo de innovación aplicada.</p>
+        <p><strong>Fecha:</strong> 20 de Octubre 2025</p>
+        <p><strong>Lugar:</strong> Auditorio Principal UNAMAD</p>
+        <div class="botones">
+          <a href="#" class="btn">Ver más información</a>
+          <a href="#" class="btn secundario">Inscribirse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="ver-mas-eventos" class="btn-mostrar">Mostrar más</button>
+</section>
+
+<!-- Preventa -->
+<section id="preventa" class="seccion fade-in">
+  <h2>Preventa del Polo Institucional</h2>
+  <p class="subtitulo">Sé parte de la familia de Ingeniería de Sistemas — ¡Llévate tu polo oficial!</p>
+
+  <div class="producto-card">
+    <img src="images/polito.png" alt="Polo Institucional UNAMAD">
+    <div class="info-producto">
+      <h3>Polo Institucional Sistemas SC</h3>
+      <p>Diseño elegante con cuello tipo camisa, bordado oficial y materiales de alta calidad. Disponible en varias tallas.</p>
+      <p class="precio">S/ 55.00</p>
+      <button id="Ver-detalles" class="btn">Ver más detalles</button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Detalles del Producto -->
+<div id="modal-producto" class="modal">
+  <div class="modal-content">
+    <span class="cerrar">&times;</span>
+    <img src="images/polito.png" alt="Polo Institucional Detalle" class="modal-img">
+    <h3>Polo Institucional Sistemas SC</h3>
+    <p>Representa al Sistemas Sporting Club con orgullo.  
+    Polo institucional con bordado en el pecho y logo oficial de la UNAMAD.  
+    Material: Puma deportivo.  
+    Tallas disponibles: S, M, L, XL, XXL.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSchM5wbogBVlcy2XlUeaBghZg1NI7N884mu6MNLq7XJZt2ddw/viewform?usp=header" target="_blank" class="btn">Reservar / Comprar</a>
+  </div>
+</div>
+
+
+
+
+    <section id="contacto" class="seccion fade-in">
+      <h2>Contacto</h2>
+      <p>Email: <strong>dir_epis@unamad.edu.pe</strong></p>
+      <p>Dirección: Ciudad Universitaria - Pabellon B segundo piso</p>
+
+      <p> Av. Jorge Chávez s/n, Puerto Maldonado</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Escuela Profesional de Ingeniería de Sistemas - UNAMAD</p>
+    <p>Power By: Ixiuss | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
